@@ -1,0 +1,12 @@
+Rules of Exception when overrding
+
+* Exepctions have to be decalred in a objects superclass 
+* The overriding subclass can create subtypes of the superclasses exception by inheriting that superclasses exception type
+	class MyException extends Exception {
+    // Custom exception implementation
+}
+
+class MySubException extends MyException {
+    // Custom sub-exception implementation
+}
+* Subclasses of overriden method cannot create new Exception's with the Parents Exception Type
